@@ -2,5 +2,5 @@
 tempfile=/tmp/tmpdata
 touch $tempfile
 ls -l $tempfile
-trap "rm -f $tempfile" EXIT
+trap 'rm -f $tempfile' EXIT
 
